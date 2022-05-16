@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let chuyen = '';
+    let S;
+    let str = prompt('nhap vao chuỗi');
+    for (i=0;i<str.length;i++){
+        if (str.charCodeAt(i) >=65 && str.charCodeAt(i) <=90){
+            S = str[i];
+            chuyen += S.toLowerCase();
+        }else if (str.charCodeAt(i) >=97 && str.charCodeAt(i) <=122){
+            S = str[i];
+            chuyen += S.toUpperCase();
+
+        }else {
+            chuyen+=str[i];
+        }
+    }
+    console.log(chuyen);
+</script>
+</body>
+</html>
